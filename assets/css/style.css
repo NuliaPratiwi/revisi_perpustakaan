@@ -145,7 +145,6 @@ hr {
   flex-direction: row;
 }
 
-
 .border-0 {
   border: 0 !important;
 }
@@ -750,4 +749,18 @@ h6, .h6 {
 .card-body {
     flex: 1 1 auto;
     padding: 1.25rem;
+}
+.side-nav li.sub-menu{
+  position: relative;
+}
+.side-nav li.sub-menu ul{
+  list-style: none;
+  padding:1rem;
+  padding: 0 auto;
+  background: #fff;
+  width: 100%;
+  display: none;
+}
+.side-nav li.sub-menu:hover ul{
+  display: block;
 }

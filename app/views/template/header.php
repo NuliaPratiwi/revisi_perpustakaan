@@ -17,58 +17,56 @@
 <body id="page-top">
 
   <div id="wrapper">
-
-    <ul class="side-nav bg-utama sidebar sidebar-gelap toggle toggled">
-
-      <a class="sidebar-judul d-flex justify-content-center" href="index.html">
+     <!--  -->
+    <ul class="side-nav bg-utama sidebar sidebar-gelap">
+      <a class="sidebar-judul d-flex justify-content-center" href="">
         <div class="sidebar-icon rotate-n-15">
           <i class="fas fa-book"></i>
         </div>
         <div class="judul mx-3">Pepustakaan Skensa</div>
       </a>
-
       <hr class="garis-h my-0">
-
       <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
         </li>
-
         <hr class="garis-h">
-
         <div class="sub-judul">
           Fiture
         </div>
-
         <li class="nav-item">
           <a class="nav-link" href="<?= BASEURL ?>/buku">
             <i class="fas fa-fw fa-book"></i>
             <span>Daftar Buku</span></a>
           </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="peminjaman.html">
+          <li class="nav-item sub-menu">
+            <a class="nav-link nav-button" href="">
               <i class="fas fa-fw fa-list"></i>
-              <span>Tambah Data</span></a>
-            </li>
+              <span>Tambah Data</span>
+            </a>
+            <ul class="">
+              <li><a href="#">Tambah Kategori &nbsp;<i class="fas fa-plus"></i></a></li>
+              <li><a href="#">Tambah Jurusan &nbsp;  <i class="fas fa-plus"></i></a></li>
+            </ul>
+          </li>
             <li class="nav-item">
-              <a class="nav-link" href="pengembalian.html">
+              <a class="nav-link" href="<?= BASEURL ?>">
                 <i class="fas fa-fw fa-users" ></i>
                 <span>User</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="pengembalian.html">
+                <a class="nav-link" href="<?= BASEURL ?>/peminjaman">
                   <i class="fas fa-fw fa-sign-out-alt" ></i>
                   <span>Peminjaman</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="pengembalian.html">
+                  <a class="nav-link" href="<?= BASEURL ?>/kembali">
                     <i class="fas fa-fw fa-check" ></i>
                     <span>Pengambalian</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="laporan.php">
+                    <a class="nav-link" href="<?= BASEURL ?>/laporan">
                       <i class="fas fa-fw fa-download" ></i>
                       <span>Generate Laporan</span></a>
                     </li>
