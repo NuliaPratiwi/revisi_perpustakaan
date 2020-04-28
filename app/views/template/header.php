@@ -17,85 +17,94 @@
 <body id="page-top">
 
   <div id="wrapper">
-     <!--  -->
-    <ul class="side-nav bg-utama sidebar sidebar-gelap">
-      <a class="sidebar-judul d-flex justify-content-center" href="">
-        <div class="sidebar-icon rotate-n-15">
-          <i class="fas fa-book"></i>
-        </div>
-        <div class="judul mx-3">Pepustakaan Skensa</div>
-      </a>
-      <hr class="garis-h my-0">
-      <li class="nav-item active">
-        <a class="nav-link" href="">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span></a>
+   <!--  -->
+   <ul class="side-nav bg-utama sidebar sidebar-gelap">
+    <a class="sidebar-judul d-flex justify-content-center" href="">
+      <div class="sidebar-icon rotate-n-15">
+        <i class="fas fa-book"></i>
+      </div>
+      <div class="judul mx-3">Pepustakaan Skensa</div>
+    </a>
+    <hr class="garis-h my-0">
+    <li class="nav-item active">
+      <a class="nav-link" href="<?= BASEURL ?>/perpustakaan">
+        <i class="fas fa-fw fa-tachometer-alt"></i>
+        <span>Dashboard</span></a>
+      </li>
+      <hr class="garis-h">
+      <div class="sub-judul">
+        Fiture
+      </div>
+      <li class="nav-item">
+        <a class="nav-link" href="<?= BASEURL ?>/buku">
+          <i class="fas fa-fw fa-book"></i>
+          <span>Daftar Buku</span></a>
         </li>
-        <hr class="garis-h">
-        <div class="sub-judul">
-          Fiture
-        </div>
+        <li class="nav-item sub-menu">
+          <a class="nav-link nav-button">
+            <i class="fas fa-fw fa-list"></i>
+            <span>Tambah Data</span>
+          </a>
+          <ul class="">
+            <li><a href="<?= BASEURL ?>/Tambah_data/kategori">Tambah Kategori &nbsp;<i class="fas fa-plus"></i></a></li>
+            <li><a href="<?= BASEURL ?>/Tambah_data/jurusan">Tambah Jurusan &nbsp;  <i class="fas fa-plus"></i></a></li>
+          </ul>
+        </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?= BASEURL ?>/buku">
-            <i class="fas fa-fw fa-book"></i>
-            <span>Daftar Buku</span></a>
+          <a class="nav-link" href="<?= BASEURL ?>">
+            <i class="fas fa-fw fa-users" ></i>
+            <span>User</span></a>
           </li>
-          <li class="nav-item sub-menu">
-            <a class="nav-link nav-button" href="">
-              <i class="fas fa-fw fa-list"></i>
-              <span>Tambah Data</span>
-            </a>
-            <ul class="">
-              <li><a href="#">Tambah Kategori &nbsp;<i class="fas fa-plus"></i></a></li>
-              <li><a href="#">Tambah Jurusan &nbsp;  <i class="fas fa-plus"></i></a></li>
-            </ul>
-          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?= BASEURL ?>/peminjaman">
+              <i class="fas fa-fw fa-sign-out-alt" ></i>
+              <span>Peminjaman</span></a>
+            </li>
             <li class="nav-item">
-              <a class="nav-link" href="<?= BASEURL ?>">
-                <i class="fas fa-fw fa-users" ></i>
-                <span>User</span></a>
+              <a class="nav-link" href="<?= BASEURL ?>/kembali">
+                <i class="fas fa-fw fa-check" ></i>
+                <span>Pengambalian</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="<?= BASEURL ?>/peminjaman">
-                  <i class="fas fa-fw fa-sign-out-alt" ></i>
-                  <span>Peminjaman</span></a>
+                <a class="nav-link" href="<?= BASEURL ?>/laporan">
+                  <i class="fas fa-fw fa-download" ></i>
+                  <span>Generate Laporan</span></a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="<?= BASEURL ?>/kembali">
-                    <i class="fas fa-fw fa-check" ></i>
-                    <span>Pengambalian</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="<?= BASEURL ?>/laporan">
-                      <i class="fas fa-fw fa-download" ></i>
-                      <span>Generate Laporan</span></a>
-                    </li>
 
-                    <hr class="garis-h d-none d-md-block">
+                <hr class="garis-h d-none d-md-block">
 
-                    <!-- Sidebar Toggler (Sidebar) -->
-                    <div class="text-center d-none d-md-inline">
-                      <button class="rounded-circle border-0" id="sidebarToggle"></button>
-                    </div>
+                <!-- Sidebar Toggler (Sidebar) -->
+                <div class="text-center d-none d-md-inline">
+                  <button class="rounded-circle border-0" id="sidebarToggle"></button>
+                </div>
 
-                  </ul>
+                <hr class="garis-w d-none d-md-block">
+                <li class="nav-item logout ">
+                  <a class="nav-link text-center" href="<?= BASEURL ?>/">
+                    <i class="fas fa-fw fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                  </a>
+                </li>
 
-                  <div id="content-wrapper" class="d-flex flex-column">
-                    <div id="content">
 
-                      <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+              </ul>
 
-                        <!-- Sidebar Toggle (Topbar) -->
-                        <button id="sidebarToggleTop" class="btntop btn-link d-md-none rounded-circle mr-3">
-                          <i class="fa fa-bars"></i>
-                        </button>
-                        <!-- Topbar Navbar -->
-                        <ul class="navbar-nav ml-auto">
-                          <div class="topbar-divider d-none d-sm-block"></div>
-                          <li class="nav-item dropdown no-arrow">
-                            <span class="mr-2 d-none d-lg-inline text-gray-600 small">Wahyu Purnama</span>
-                            <img class="img-profile rounded-circle" src="<?= BASE_URL ?>/img/asset/wahyu.jpg">
-                          </li>
+              <div id="content-wrapper" class="d-flex flex-column">
+                <div id="content">
 
-                        </ul>
-                      </nav>
+                  <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btntop btn-link d-md-none rounded-circle mr-3">
+                      <i class="fa fa-bars"></i>
+                    </button>
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                      <div class="topbar-divider d-none d-sm-block"></div>
+                      <li class="nav-item dropdown no-arrow">
+                        <span class="mr-2 d-none d-lg-inline text-gray-600 small">Wahyu Purnama</span>
+                        <img class="img-profile rounded-circle" src="<?= BASE_URL ?>/img/asset/wahyu.jpg">
+                      </li>
+
+                    </ul>
+                  </nav>
