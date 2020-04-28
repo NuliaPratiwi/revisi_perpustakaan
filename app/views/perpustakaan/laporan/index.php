@@ -5,7 +5,9 @@
                   </div>
                   <div class="row">
 
-
+                    <a href="<?= BASEURL ?>/laporan/L_buku">
+                      <div class="col-xl-4 col-lg-4 col-md-6 mb-4"></div>
+                    
                     <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
                       <div class="card shadow h-100 py-2">
                         <div class="card-body border-left-primary shadow">
@@ -21,6 +23,7 @@
                         </div>
                       </div>
                     </div>
+                    </a>
 
                     <div class="col-xl-4 col-lg-4 col-md-6 mb-4">
                       <div class="card shadow h-100 py-2">
