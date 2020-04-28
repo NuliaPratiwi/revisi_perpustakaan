@@ -21,14 +21,18 @@
                         <th>Aksi</th>
                     </tr>
                     <tr>
-                        <td>1</td>
-                        <td>Agama</td>
-                        <td>001</td>
-                        <td>
-                            <a href="" type="submit" name="" class="btn btn-primary"><i class="fas fa-edit"></i> &nbsp; Edit </a>
-                            <a href="" type="submit" name="delete" class="btn btn-danger"> <i class="fas fa-trash-alt"></i> &nbsp;Delete</a>
-                            <a href="" type="submit" name="delete" class="btn btn-success"> <i class="fas fa-eye"></i> &nbsp;Detail</a>
-                        </td>
+                      <?php $i=1; ?>
+                      <?php foreach ($data['kategori'] as $kategori): ?>
+                          <tr>
+                             <td><?= $i++ ?></td>
+                             <td><?=$kategori['kategori'] ?></td>
+                             <td><?= $kategori['kode'] ?></td>
+                             <td width="30%">
+                                  <a href="<?= BASEURL?>/buku/edit_kategori/<?= $kategori['id_kategori'] ?>" class="btn btn-primary btn-ubah "><i class="fas fa-edit"></i> &nbsp;Edit</a>
+                                   <a href="<?= BASEURL?>/Proses/hapus_kategori/<?= $kategori['id_kategori'] ?>" class="btn btn-danger"><i class="fas fa-trash-alt"></i> &nbsp;Hapus </a>
+                             </td>
+                          </tr>
+                        <?php endforeach ?>
                     </tr>
                 </table>
             </div>
