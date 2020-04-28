@@ -25,4 +25,11 @@ class Laporan extends Controller
     	$this->view('perpustakaan/laporan/L_user', $data);
 	    $this->view('template/footer');
     }
+
+    public function L_peminjaman(){
+        $data['judul'] = "laporan buku";
+        $this->view('template/header',$data);
+        $this->view('perpustakaan/laporan/L_peminjaman', $data);
+        $this->view('template/footer');
+    }
 }
